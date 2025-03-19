@@ -33,14 +33,14 @@ public class UserInteractionService(ICollectRepositoryDataService collectReposit
         System.Console.WriteLine("--------------------------------");
         
         System.Console.Write("Enter your GitHub access token: ");
-        var accessToken = System.Console.ReadLine();
+        var accessToken = System.Console.ReadLine()!.Trim();
         
         System.Console.Write("Enter repository owner: ");
-        var owner = System.Console.ReadLine();
-        
+        var owner = System.Console.ReadLine()!.Trim();
+
         System.Console.Write("Enter repository name: ");
-        var repositoryName = System.Console.ReadLine();
-        
+        var repositoryName = System.Console.ReadLine()!.Trim();
+
         if (string.IsNullOrWhiteSpace(accessToken) || 
             string.IsNullOrWhiteSpace(owner) || 
             string.IsNullOrWhiteSpace(repositoryName))
