@@ -1,0 +1,15 @@
+.git/
+**/[Bb]in/
+**/[Oo]bj/
+**/Dockerfile*
+**/docker-compose*.yaml
+**/docker-compose.*.yml
+**/*.md
+**/.env
+
+.dockerignore
+.gitignore
+*.DotSettings.user
+
+.vs
+.vscode
